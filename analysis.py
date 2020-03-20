@@ -15,6 +15,7 @@ itub4 = pd.read_csv('itub4.csv', sep=';', thousands='.', decimal=',')
 petr4 = pd.read_csv('petr4.csv', sep=';', thousands='.', decimal=',')
 usim5 = pd.read_csv('usim5.csv', sep=';', thousands='.', decimal=',')
 vale3 = pd.read_csv('vale3.csv', sep=';', thousands='.', decimal=',')
+ibov = pd.read_csv('ibov.csv', sep=';', thousands='.', decimal=',')
 
 #Vamos selecionar a coluna Adj Close, pois ela já leva em conta os dividendos distribuidos
 
@@ -28,8 +29,9 @@ itub4 = itub4[['Date', 'Adj Close']]
 petr4 = petr4[['Date', 'Adj Close']]
 usim5 = usim5[['Date', 'Adj Close']]
 vale3 = vale3[['Date', 'Adj Close']]
+ibov = ibov[['Date', 'Adj Close']]
 
 #Carteira de variância mínima
 #mvp_weights = 
-#mvp_returns = mvp_returns.transpose().dot(exp_returns)
+#mvp_returns = mvp_weights.transpose().dot(exp_returns)
 #mvp_variance = eqt.dot(mvp_returns.transpose().dot(var_eqt))
