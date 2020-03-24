@@ -8,3 +8,5 @@ from returns import exp_returns
 #mvp_weights = 
 #mvp_returns = mvp_weights.transpose().dot(exp_returns)
 #mvp_variance = eqt.dot(mvp_returns.transpose().dot(var_eqt))
+
+print(exp_returns)

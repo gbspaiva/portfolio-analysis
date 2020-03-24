@@ -79,4 +79,4 @@ petr4_ret = r0 + (cov_petr4/ibov_std)*PRM
 usim5_ret = r0 + (cov_usim5/ibov_std)*PRM
 vale3_ret = r0 + (cov_vale3/ibov_std)*PRM
 
-exp_returns = [bbas3_ret, bbrk3_ret, brml3_ret, cmig3_ret, ggbr4_ret, itsa4_ret, itub4_ret, petr4_ret, usim5_ret, vale3_ret]
+exp_returns = [[bbas3_ret, bbrk3_ret, brml3_ret, cmig3_ret, ggbr4_ret, itsa4_ret, itub4_ret, petr4_ret, usim5_ret, vale3_ret]]
