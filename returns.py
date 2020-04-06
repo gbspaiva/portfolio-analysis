@@ -81,4 +81,6 @@ vale3_ret = r0 + (cov_vale3/ibov_std)*PRM
 
 exp_returns = [[bbas3_ret, bbrk3_ret, brml3_ret, cmig3_ret, ggbr4_ret, itsa4_ret, itub4_ret, petr4_ret, usim5_ret, vale3_ret]]
 exp_returns = np.asmatrix(exp_returns)
+var_eqt = var_eqt[['Adj Close_bbas3', 'Adj Close_bbrk3', 'Adj Close_brml3', 'Adj Close_cmig3','Adj Close_ggbr4', 'Adj Close_itsa4', 'Adj Close_itub4', 'Adj Close_petr4', 'Adj Close_usim5', 'Adj Close_vale3']]
+var_eqt = var_eqt.drop('Adj Close', axis=0)
 var_eqt = np.asmatrix(var_eqt)
